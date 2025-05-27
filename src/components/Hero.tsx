@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Github, Mail } from 'lucide-react';
 
@@ -84,19 +83,17 @@ const Hero = () => {
           {/* Right Content - Profile Image */}
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
-              {/* Main image container */}
+              {/* Main image container with square mask */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 rounded-3xl rotate-6 opacity-75"></div>
                 <div className="absolute inset-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 rounded-3xl rotate-3 opacity-90"></div>
                 <div className="relative w-full h-full bg-gray-800 rounded-3xl p-1 border-2 border-white/20">
-                  <div className="w-full h-full rounded-2xl bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center text-gray-300 text-lg font-medium">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span className="text-3xl">👨‍💻</span>
-                      </div>
-                      <p>Profile Photo</p>
-                      <p className="text-sm opacity-75">Coming Soon</p>
-                    </div>
+                  <div className="w-full h-full rounded-2xl overflow-hidden">
+                    <img 
+                      src="https://i.postimg.cc/pLSk2tn6/Whats-App-Image-2025-05-25-at-10-56-24-PM.jpg" 
+                      alt="E Charan Kumar Reddy - Profile Picture"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
